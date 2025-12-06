@@ -37,7 +37,7 @@ const gettaipeiWeather = async (req, res) => {
       {
         params: {
           Authorization: CWA_API_KEY,
-          locationName: "臺北市",
+          locationName: "臺北市,宜蘭縣,花蓮縣,臺東縣,澎湖縣,金門縣,連江縣,新北市,桃園市,臺中市,臺南市,高雄市,基隆市,新竹縣,新竹市,苗栗縣,彰化縣,南投縣,雲林縣,嘉義縣,嘉義市,屏東縣",
         },
       }
     );
@@ -48,7 +48,7 @@ const gettaipeiWeather = async (req, res) => {
     if (!locationData) {
       return res.status(404).json({
         error: "查無資料",
-        message: "無法取得臺北市天氣資料",
+        message: "無法取得天氣資料",
       });
     }
 
