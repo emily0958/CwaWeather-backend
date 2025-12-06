@@ -93,7 +93,7 @@ GET /api/health
 }
 ```
 
-### 3. 取得台北天氣預報
+### 3. 取得台北市天氣預報
 
 ```
 GET /api/weather/taipei
